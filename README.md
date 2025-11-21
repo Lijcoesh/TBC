@@ -1,73 +1,118 @@
-# React + TypeScript + Vite
+# BitBattle
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A community-driven platform where developers and designers compete by submitting creative projects — from absurd UI/UX designs to funny React components and original experiments. Inspired by the legendary 2017 Reddit "worst design" contest and React Bits.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Vision
+BitBattle is part hackathon, part meme culture, part portfolio builder.  
+We celebrate originality, humor, and creativity — not just technical correctness.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
+**Frontend**
+- React + TypeScript
+- Material UI
+- React Router v6
+- Axios
 
-## Expanding the ESLint configuration
+**Backend**
+- ASP.NET Core Web API
+- Entity Framework Core
+- PostgreSQL / SQL Server
+- JWT Authentication (OAuth via GitHub/Google/Microsoft)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**Deployment**
+- Frontend: Vercel / Netlify
+- Backend: Azure / AWS
+- CI/CD: GitHub Actions
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Core Features
+- Homepage with featured competitions & past winners
+- Competition system (active/past/all filters, countdown timers)
+- Submission flow (title, description, repo link, screenshot/GIF)
+- Voting system (upvote/downvote, transparent counts)
+- Leaderboards (per competition + overall rankings)
+- Comments (threads under submissions)
+- User profiles (submissions, badges, portfolio links)
+- Authentication (OAuth login, JWT sessions)
+- Admin dashboard (manage competitions, moderate submissions/comments)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Design Guidelines
+- Dark modern tech theme (VS Code + Discord vibe)
+- Primary: Indigo `#6366f1`
+- Accent: Pink `#ec4899`
+- Typography: Inter / Roboto
+- Rounded corners (12px), subtle shadows
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Project Structure
+### Frontend
+src/
+├──components
+├──pages/
+├──services/
+├──types/
+├──contexts/
+├──utils/
+├──theme/
+└──App.tsx
+
+
+### Backend
+src/ 
+├── Controllers/ # API controllers 
+├── Models/ # Entity models 
+├── DTOs/ # Data transfer objects 
+├── Services/ # Business logic 
+├── Data/ # DbContext + migrations 
+├── Middleware/ # Auth, error handling 
+└── Program.cs
+
+
+---
+
+## 🛠️ Development Phases
+1. Planning & Setup  
+2. Backend Foundation  
+3. Frontend Foundation  
+4. Authentication & Users  
+5. Voting & Engagement  
+6. Admin Features  
+7. Polish & Deployment  
+
+---
+
+## 🎯 Success Criteria (MVP)
+- Users can browse competitions  
+- OAuth login works  
+- Submissions + voting + comments functional  
+- Leaderboards display rankings  
+- Admins can manage competitions  
+- Responsive + accessible design  
+- Deployed and publicly accessible  
+
+---
+
+## Future Enhancements
+- Email notifications  
+- Advanced search & filters  
+---
+
+## Resources
+- [Material UI Docs](https://mui.com/)  
+- [ASP.NET Core Docs](https://docs.microsoft.com/aspnet/core)  
+- [React Router](https://reactrouter.com/)  
+- [Entity Framework Core](https://docs.microsoft.com/ef/core)  
+- [OAuth Docs](https://docs.github.com/apps/oauth-apps/)  
+
+---
+
+## License
+MIT License © 2025 CodeCarnival
