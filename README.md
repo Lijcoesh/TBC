@@ -1,11 +1,11 @@
-# BitBattle
+# CodeCarnival
 
 A community-driven platform where developers and designers compete by submitting creative projects — from absurd UI/UX designs to funny React components and original experiments. Inspired by the legendary 2017 Reddit "worst design" contest and React Bits.
 
 ---
 
 # Vision
-BitBattle is part hackathon, part meme culture, part portfolio builder.  
+CodeCarnival is part hackathon, part meme culture, part portfolio builder.  
 We celebrate originality, humor, and creativity — not just technical correctness.
 
 ---
@@ -40,15 +40,6 @@ We celebrate originality, humor, and creativity — not just technical correctne
 - User profiles (submissions, badges, portfolio links)
 - Authentication (OAuth login, JWT sessions)
 - Admin dashboard (manage competitions, moderate submissions/comments)
-
----
-
-## Design Guidelines
-- ... theme ???
-- Primary: TO BE decided
-- Accent: TO BE DECIDED
-- Typography: ???
-- Rounded corners (12px), subtle shadows
 
 ---
 
